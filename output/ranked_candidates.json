@@ -1,0 +1,309 @@
+{
+  "results": [
+    {
+      "candidate": "candidate_01_strong",
+      "file": "candidate_01_strong.txt",
+      "overall_score": 88.16,
+      "skills_score": 32.67,
+      "experience_score": 25.0,
+      "semantic_score": 10.49,
+      "education_score": 10.0,
+      "projects_score": 7,
+      "certifications_score": 3,
+      "matched_required_skills": [
+        "git",
+        "machine learning",
+        "natural language processing",
+        "python",
+        "pytorch",
+        "restful api",
+        "scikit-learn",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [
+        "amazon web services",
+        "docker",
+        "flask"
+      ],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_01_strong has relevant skills including git, machine learning, natural language processing, python, pytorch; shows 2 years of experience; includes relevant project work; lists relevant certifications. Missing required skills: tensorflow.",
+      "rank": 1
+    },
+    {
+      "candidate": "candidate_08_strong_alt",
+      "file": "candidate_08_strong_alt.txt",
+      "overall_score": 82.37,
+      "skills_score": 27.33,
+      "experience_score": 25.0,
+      "semantic_score": 10.04,
+      "education_score": 10.0,
+      "projects_score": 7,
+      "certifications_score": 3,
+      "matched_required_skills": [
+        "git",
+        "machine learning",
+        "natural language processing",
+        "python",
+        "pytorch",
+        "restful api",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "scikit-learn",
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [
+        "amazon web services",
+        "docker"
+      ],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_08_strong_alt has relevant skills including git, machine learning, natural language processing, python, pytorch; shows 2.5 years of experience; includes relevant project work; lists relevant certifications. Missing required skills: scikit-learn, tensorflow.",
+      "rank": 2
+    },
+    {
+      "candidate": "candidate_05_different_format",
+      "file": "candidate_05_different_format.txt",
+      "overall_score": 72.74,
+      "skills_score": 29.33,
+      "experience_score": 25.0,
+      "semantic_score": 8.41,
+      "education_score": 10.0,
+      "projects_score": 0.0,
+      "certifications_score": 0.0,
+      "matched_required_skills": [
+        "git",
+        "machine learning",
+        "natural language processing",
+        "python",
+        "restful api",
+        "scikit-learn",
+        "tensorflow"
+      ],
+      "missing_required_skills": [
+        "pytorch",
+        "sql"
+      ],
+      "matched_preferred_skills": [
+        "amazon web services",
+        "docker",
+        "flask"
+      ],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_05_different_format has relevant skills including git, machine learning, natural language processing, python, restful api; shows 1.5 years of experience. Missing required skills: pytorch, sql.",
+      "rank": 3
+    },
+    {
+      "candidate": "candidate_07_irrelevant_info",
+      "file": "candidate_07_irrelevant_info.txt",
+      "overall_score": 68.12,
+      "skills_score": 19.33,
+      "experience_score": 25.0,
+      "semantic_score": 6.79,
+      "education_score": 10.0,
+      "projects_score": 7,
+      "certifications_score": 0.0,
+      "matched_required_skills": [
+        "git",
+        "python",
+        "restful api",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "machine learning",
+        "natural language processing",
+        "pytorch",
+        "scikit-learn",
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [
+        "amazon web services",
+        "django",
+        "docker"
+      ],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_07_irrelevant_info has relevant skills including git, python, restful api, sql; shows 2 years of experience; includes relevant project work. Missing required skills: machine learning, natural language processing, pytorch, scikit-learn, tensorflow.",
+      "rank": 4
+    },
+    {
+      "candidate": "candidate_11_pdf",
+      "file": "candidate_11_pdf.pdf",
+      "overall_score": 59.67,
+      "skills_score": 28.67,
+      "experience_score": 0.0,
+      "semantic_score": 11.0,
+      "education_score": 10.0,
+      "projects_score": 7,
+      "certifications_score": 3,
+      "matched_required_skills": [
+        "git",
+        "machine learning",
+        "natural language processing",
+        "python",
+        "pytorch",
+        "restful api",
+        "scikit-learn",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [
+        "docker"
+      ],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_11_pdf has relevant skills including git, machine learning, natural language processing, python, pytorch; includes relevant project work; lists relevant certifications. Missing required skills: tensorflow.",
+      "rank": 5
+    },
+    {
+      "candidate": "candidate_04_missing_skills",
+      "file": "candidate_04_missing_skills.txt",
+      "overall_score": 56.21,
+      "skills_score": 6.67,
+      "experience_score": 25.0,
+      "semantic_score": 7.54,
+      "education_score": 10.0,
+      "projects_score": 7,
+      "certifications_score": 0.0,
+      "matched_required_skills": [
+        "git",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "machine learning",
+        "natural language processing",
+        "python",
+        "pytorch",
+        "restful api",
+        "scikit-learn",
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_04_missing_skills has relevant skills including git, sql; shows 3 years of experience; includes relevant project work. Missing required skills: machine learning, natural language processing, python, pytorch, restful api.",
+      "rank": 6
+    },
+    {
+      "candidate": "candidate_10_docx",
+      "file": "candidate_10_docx.docx",
+      "overall_score": 50.79,
+      "skills_score": 24.0,
+      "experience_score": 0.0,
+      "semantic_score": 9.79,
+      "education_score": 10.0,
+      "projects_score": 7,
+      "certifications_score": 0.0,
+      "matched_required_skills": [
+        "git",
+        "machine learning",
+        "python",
+        "restful api",
+        "scikit-learn",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "natural language processing",
+        "pytorch",
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [
+        "amazon web services",
+        "flask"
+      ],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_10_docx has relevant skills including git, machine learning, python, restful api, scikit-learn; includes relevant project work. Missing required skills: natural language processing, pytorch, tensorflow.",
+      "rank": 7
+    },
+    {
+      "candidate": "candidate_06_freshers",
+      "file": "candidate_06_freshers.txt",
+      "overall_score": 43.01,
+      "skills_score": 20.0,
+      "experience_score": 0.0,
+      "semantic_score": 10.01,
+      "education_score": 10.0,
+      "projects_score": 0.0,
+      "certifications_score": 3,
+      "matched_required_skills": [
+        "git",
+        "machine learning",
+        "natural language processing",
+        "python",
+        "scikit-learn",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "pytorch",
+        "restful api",
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_06_freshers has relevant skills including git, machine learning, natural language processing, python, scikit-learn; lists relevant certifications. Missing required skills: pytorch, restful api, tensorflow.",
+      "rank": 8
+    },
+    {
+      "candidate": "candidate_02_medium",
+      "file": "candidate_02_medium.txt",
+      "overall_score": 35.47,
+      "skills_score": 10.0,
+      "experience_score": 0.0,
+      "semantic_score": 8.47,
+      "education_score": 10.0,
+      "projects_score": 7,
+      "certifications_score": 0.0,
+      "matched_required_skills": [
+        "git",
+        "python",
+        "sql"
+      ],
+      "missing_required_skills": [
+        "machine learning",
+        "natural language processing",
+        "pytorch",
+        "restful api",
+        "scikit-learn",
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_02_medium has relevant skills including git, python, sql; includes relevant project work. Missing required skills: machine learning, natural language processing, pytorch, restful api, scikit-learn.",
+      "rank": 9
+    },
+    {
+      "candidate": "candidate_03_weak",
+      "file": "candidate_03_weak.txt",
+      "overall_score": 16.47,
+      "skills_score": 0.0,
+      "experience_score": 0.0,
+      "semantic_score": 6.47,
+      "education_score": 10.0,
+      "projects_score": 0.0,
+      "certifications_score": 0.0,
+      "matched_required_skills": [],
+      "missing_required_skills": [
+        "git",
+        "machine learning",
+        "natural language processing",
+        "python",
+        "pytorch",
+        "restful api",
+        "scikit-learn",
+        "sql",
+        "tensorflow"
+      ],
+      "matched_preferred_skills": [],
+      "similarity_method": "embeddings",
+      "reasoning": "candidate_03_weak shows limited overlap with the JD. Missing required skills: git, machine learning, natural language processing, python, pytorch.",
+      "rank": 10
+    }
+  ],
+  "skipped": [
+    {
+      "file": "candidate_09_empty.txt",
+      "reason": "resumes\\candidate_09_empty.txt produced little/no text — file may be empty, image-only (scanned), or corrupted."
+    }
+  ]
+}
