@@ -1,0 +1,37 @@
+name: Tests
+
+# Runs automatically on every push and pull request, so you (or anyone
+# reviewing this repo) always knows immediately if a change broke
+# something - no need to manually run the test file yourself.
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Only installs the lightweight dependencies the test suite
+      # actually needs (parsing + scoring). sentence-transformers is
+      # intentionally skipped here to keep CI fast - the app is
+      # designed to automatically fall back to TF-IDF similarity when
+      # the embedding model isn't available, so tests still exercise a
+      # fully working code path.
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyMuPDF python-docx scikit-learn numpy
+
+      - name: Run test suite
+        run: python tests/test_pipeline.py
