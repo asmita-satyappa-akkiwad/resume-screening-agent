@@ -1,6 +1,6 @@
 # Resume Screening Agent
 
-![Tests](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/test.yml/badge.svg)
+![Tests](https://github.com/asmita-satyappa-akkiwad/resume-screening-agent/actions/workflows/test.yml/badge.svg)
 
 *(Replace `YOUR_USERNAME/YOUR_REPO` above with your actual GitHub path once you push — the badge will automatically show a green "passing" once Actions runs.)*
 
