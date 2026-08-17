@@ -2,7 +2,6 @@
 
 ![Tests](https://github.com/asmita-satyappa-akkiwad/resume-screening-agent/actions/workflows/test.yml/badge.svg)
 
-*(Replace `YOUR_USERNAME/YOUR_REPO` above with your actual GitHub path once you push — the badge will automatically show a green "passing" once Actions runs.)*
 
 An AI agent that takes a Job Description and a folder of resumes (PDF/DOCX/TXT),
 scores every candidate against the JD using a transparent, reproducible scoring
