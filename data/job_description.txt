@@ -1,0 +1,33 @@
+Job Title: Junior AI Research Associate
+
+About the role:
+We are looking for a Junior AI Research Associate to join our team.
+The ideal candidate has hands-on experience building and evaluating
+machine learning and NLP systems, and is comfortable working with
+Python in a fast-paced research environment.
+
+Responsibilities:
+- Build and evaluate NLP and machine learning models
+- Work with APIs and backend services to deploy models
+- Collaborate with senior researchers on experiments
+- Write clean, well-documented Python code
+
+Required Skills:
+- Strong proficiency in Python
+- Experience with machine learning and NLP (e.g. scikit-learn, pytorch, or tensorflow)
+- Familiarity with REST APIs
+- Experience with SQL or another database technology
+- Git version control
+
+Preferred Skills:
+- Experience with Docker
+- Experience with AWS or another cloud platform
+- Familiarity with Flask or Django
+- Experience with data visualization tools
+
+Education:
+Bachelor's degree in Computer Science, Engineering, or a related field.
+
+Experience:
+1+ years of relevant experience (internships and strong academic
+projects are acceptable).

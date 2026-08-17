@@ -1,0 +1,20 @@
+Rohan Verma
+rohan.verma@example.com
+
+Objective:
+CS graduate seeking a role in software development.
+
+Technical Skills:
+Python, Java, SQL, Git, HTML, CSS
+
+Work Experience:
+Software Development Intern - CodeBridge (1 year)
+- Worked on internal tools using Python and SQL
+- Used Git for source control
+
+Education:
+B.E in Computer Science, 2025
+
+Projects:
+- Library Management System using Python and MySQL
+- Personal portfolio website using HTML/CSS

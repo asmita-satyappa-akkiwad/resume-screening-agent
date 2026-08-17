@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume Screening Report</title>
+<style>
+:root {
+  --bg: #0f1420; --panel: #171d2e; --panel-2: #1e2740; --border: #2a3350;
+  --text: #e7ebf5; --muted: #93a0c2; --accent: #6ea8fe; --good: #37c17a;
+  --bad: #e2694d; --gold: #ffd166;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--text); font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0; padding: 32px 16px 64px;
+}
+.wrap { max-width: 880px; margin: 0 auto; }
+h1 { font-size: 24px; margin-bottom: 4px; }
+.subtitle { color: var(--muted); margin-top: 0; margin-bottom: 32px; font-size: 14px; }
+h2.section-title { font-size: 16px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin: 40px 0 16px; }
+.card {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px 20px; margin-bottom: 14px;
+}
+.top-card { border-color: var(--gold); box-shadow: 0 0 0 1px rgba(255,209,102,0.25); }
+.card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+.rank { color: var(--muted); font-size: 13px; margin-right: 10px; }
+.name { font-size: 17px; font-weight: 600; }
+.overall-score { font-size: 26px; font-weight: 700; color: var(--accent); }
+.out-of { font-size: 14px; color: var(--muted); font-weight: 400; }
+.bars { margin: 10px 0 14px; }
+.bar-row { display: grid; grid-template-columns: 130px 1fr 60px; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 12px; }
+.bar-label { color: var(--muted); }
+.bar-track { background: var(--panel-2); border-radius: 6px; height: 8px; overflow: hidden; }
+.bar-fill { background: var(--accent); height: 100%; border-radius: 6px; }
+.bar-value { text-align: right; color: var(--muted); }
+.skills-row { font-size: 13px; margin-bottom: 10px; display: flex; flex-direction: column; gap: 6px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; margin: 2px 4px 2px 0; }
+.badge.matched { background: rgba(55,193,122,0.15); color: var(--good); border: 1px solid rgba(55,193,122,0.4); }
+.badge.missing { background: rgba(226,105,77,0.15); color: var(--bad); border: 1px solid rgba(226,105,77,0.4); }
+.muted { color: var(--muted); font-size: 12px; }
+.reasoning { font-size: 13px; color: var(--text); line-height: 1.5; margin: 8px 0; }
+.meta { font-size: 11px; color: var(--muted); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.04em; }
+.score-cell { color: var(--accent); font-weight: 700; }
+tr:hover td { background: var(--panel-2); }
+footer { color: var(--muted); font-size: 12px; margin-top: 40px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Resume Screening Report</h1>
+    <p class="subtitle">job_description.txt · 10 candidate(s) screened · average score 57.3/100</p>
+
+    <h2 class="section-title">Top 3 Candidates</h2>
+    
+    <div class="card top-card">
+      <div class="card-header">
+        <div>
+          <span class="rank">🥇 #1</span>
+          <span class="name">candidate_01_strong</span>
+        </div>
+        <div class="overall-score">88.16<span class="out-of">/100</span></div>
+      </div>
+      <div class="bars">
+    <div class="bar-row">
+      <span class="bar-label">Skills</span>
+      <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+      <span class="bar-value">32.67/40</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Experience</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">25/25</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Semantic similarity</span>
+      <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
+      <span class="bar-value">10.49/15</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Education</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">10/10</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Projects</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">7/7</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Certifications</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">3/3</span>
+    </div></div>
+      <div class="skills-row">
+        <div><strong>Matched required:</strong> <span class='badge matched'>git</span><span class='badge matched'>machine learning</span><span class='badge matched'>natural language processing</span><span class='badge matched'>python</span><span class='badge matched'>pytorch</span><span class='badge matched'>restful api</span><span class='badge matched'>scikit-learn</span><span class='badge matched'>sql</span></div>
+        <div><strong>Missing required:</strong> <span class='badge missing'>tensorflow</span></div>
+      </div>
+      <p class="reasoning">candidate_01_strong has relevant skills including git, machine learning, natural language processing, python, pytorch; shows 2 years of experience; includes relevant project work; lists relevant certifications. Missing required skills: tensorflow.</p>
+      <p class="meta">similarity method: embeddings · file: candidate_01_strong.txt</p>
+    </div>
+    <div class="card top-card">
+      <div class="card-header">
+        <div>
+          <span class="rank">🥈 #2</span>
+          <span class="name">candidate_08_strong_alt</span>
+        </div>
+        <div class="overall-score">82.37<span class="out-of">/100</span></div>
+      </div>
+      <div class="bars">
+    <div class="bar-row">
+      <span class="bar-label">Skills</span>
+      <div class="bar-track"><div class="bar-fill" style="width:68%"></div></div>
+      <span class="bar-value">27.33/40</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Experience</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">25/25</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Semantic similarity</span>
+      <div class="bar-track"><div class="bar-fill" style="width:67%"></div></div>
+      <span class="bar-value">10.04/15</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Education</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">10/10</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Projects</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">7/7</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Certifications</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">3/3</span>
+    </div></div>
+      <div class="skills-row">
+        <div><strong>Matched required:</strong> <span class='badge matched'>git</span><span class='badge matched'>machine learning</span><span class='badge matched'>natural language processing</span><span class='badge matched'>python</span><span class='badge matched'>pytorch</span><span class='badge matched'>restful api</span><span class='badge matched'>sql</span></div>
+        <div><strong>Missing required:</strong> <span class='badge missing'>scikit-learn</span><span class='badge missing'>tensorflow</span></div>
+      </div>
+      <p class="reasoning">candidate_08_strong_alt has relevant skills including git, machine learning, natural language processing, python, pytorch; shows 2.5 years of experience; includes relevant project work; lists relevant certifications. Missing required skills: scikit-learn, tensorflow.</p>
+      <p class="meta">similarity method: embeddings · file: candidate_08_strong_alt.txt</p>
+    </div>
+    <div class="card top-card">
+      <div class="card-header">
+        <div>
+          <span class="rank">🥉 #3</span>
+          <span class="name">candidate_05_different_format</span>
+        </div>
+        <div class="overall-score">72.74<span class="out-of">/100</span></div>
+      </div>
+      <div class="bars">
+    <div class="bar-row">
+      <span class="bar-label">Skills</span>
+      <div class="bar-track"><div class="bar-fill" style="width:73%"></div></div>
+      <span class="bar-value">29.33/40</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Experience</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">25/25</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Semantic similarity</span>
+      <div class="bar-track"><div class="bar-fill" style="width:56%"></div></div>
+      <span class="bar-value">8.41/15</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Education</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <span class="bar-value">10/10</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Projects</span>
+      <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+      <span class="bar-value">0/7</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-label">Certifications</span>
+      <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+      <span class="bar-value">0/3</span>
+    </div></div>
+      <div class="skills-row">
+        <div><strong>Matched required:</strong> <span class='badge matched'>git</span><span class='badge matched'>machine learning</span><span class='badge matched'>natural language processing</span><span class='badge matched'>python</span><span class='badge matched'>restful api</span><span class='badge matched'>scikit-learn</span><span class='badge matched'>tensorflow</span></div>
+        <div><strong>Missing required:</strong> <span class='badge missing'>pytorch</span><span class='badge missing'>sql</span></div>
+      </div>
+      <p class="reasoning">candidate_05_different_format has relevant skills including git, machine learning, natural language processing, python, restful api; shows 1.5 years of experience. Missing required skills: pytorch, sql.</p>
+      <p class="meta">similarity method: embeddings · file: candidate_05_different_format.txt</p>
+    </div>
+
+    <h2 class="section-title">Full Ranking (10)</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th><th>Candidate</th><th>Overall</th><th>Skills</th>
+          <th>Experience</th><th>Semantic</th><th>Education</th>
+          <th>Projects</th><th>Certs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>candidate_01_strong</td>
+          <td class="score-cell">88.16</td>
+          <td>32.67</td>
+          <td>25</td>
+          <td>10.49</td>
+          <td>10</td>
+          <td>7</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>candidate_08_strong_alt</td>
+          <td class="score-cell">82.37</td>
+          <td>27.33</td>
+          <td>25</td>
+          <td>10.04</td>
+          <td>10</td>
+          <td>7</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>candidate_05_different_format</td>
+          <td class="score-cell">72.74</td>
+          <td>29.33</td>
+          <td>25</td>
+          <td>8.41</td>
+          <td>10</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>candidate_07_irrelevant_info</td>
+          <td class="score-cell">68.12</td>
+          <td>19.33</td>
+          <td>25</td>
+          <td>6.79</td>
+          <td>10</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>candidate_11_pdf</td>
+          <td class="score-cell">59.67</td>
+          <td>28.67</td>
+          <td>0</td>
+          <td>11</td>
+          <td>10</td>
+          <td>7</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>candidate_04_missing_skills</td>
+          <td class="score-cell">56.21</td>
+          <td>6.67</td>
+          <td>25</td>
+          <td>7.54</td>
+          <td>10</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>candidate_10_docx</td>
+          <td class="score-cell">50.79</td>
+          <td>24</td>
+          <td>0</td>
+          <td>9.79</td>
+          <td>10</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>candidate_06_freshers</td>
+          <td class="score-cell">43.01</td>
+          <td>20</td>
+          <td>0</td>
+          <td>10.01</td>
+          <td>10</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>candidate_02_medium</td>
+          <td class="score-cell">35.47</td>
+          <td>10</td>
+          <td>0</td>
+          <td>8.47</td>
+          <td>10</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>candidate_03_weak</td>
+          <td class="score-cell">16.47</td>
+          <td>0</td>
+          <td>0</td>
+          <td>6.47</td>
+          <td>10</td>
+          <td>0</td>
+          <td>0</td>
+        </tr></tbody>
+    </table>
+
+    <footer>Generated by the Resume Screening Agent · scores are computed deterministically from a transparent, documented formula.</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Vikram Singh
+Date of Birth: 14-03-1998
+Gender: Male
+Marital Status: Single
+Address: 42 MG Road, Bengaluru, Karnataka
+
+Skills:
+Python, Django, REST API, SQL, Git, AWS, Docker
+
+Experience:
+Software Engineer - WebNext Technologies (2 years)
+- Built REST APIs using Django and deployed them on AWS with Docker
+- Worked with PostgreSQL databases
+
+Education:
+B.Tech in Computer Science, 2023
+
+Projects:
+- E-commerce backend using Django REST Framework

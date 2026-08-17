@@ -1,0 +1,19 @@
+Karan Mehta
+karan.mehta@example.com
+
+Summary:
+Backend developer with experience in Java-based enterprise systems.
+
+Skills:
+Java, Spring Boot, SQL, Jenkins, Git, Microservices
+
+Experience:
+Backend Developer - Enterprise Solutions Inc (3 years)
+- Built microservices using Java and Spring Boot
+- Used Jenkins for CI/CD pipelines
+
+Education:
+B.Tech in Information Technology, 2022
+
+Projects:
+- Inventory Management System using Java and Spring Boot

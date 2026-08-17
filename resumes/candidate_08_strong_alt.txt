@@ -1,0 +1,28 @@
+Meera Krishnan
+meera.krishnan@example.com
+
+Profile:
+Machine learning engineer with 2.5 years of experience in NLP and
+production ML systems.
+
+Skills:
+Python, NLP, Machine Learning, PyTorch, Hugging Face, LLM, RAG,
+Vector Database, REST API, SQL, Docker, AWS, Git
+
+Experience:
+NLP Engineer - Insightify AI (2.5 years)
+- Built RAG-based question answering systems using embeddings and vector
+  databases
+- Fine-tuned transformer models for text classification
+- Deployed models as REST APIs on AWS using Docker
+
+Education:
+M.Tech in Computer Science, 2023
+
+Projects:
+- Document Q&A system using RAG and sentence embeddings
+- Resume screening prototype using cosine similarity
+
+Certifications:
+- Deep Learning Specialization (Coursera)
+- AWS Certified Machine Learning - Specialty

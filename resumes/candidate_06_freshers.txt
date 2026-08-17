@@ -1,0 +1,20 @@
+Ananya Gupta
+ananya.gupta@example.com
+
+Summary:
+Recent graduate passionate about AI and machine learning, with strong
+academic projects in NLP.
+
+Skills:
+Python, scikit-learn, NLP, Pandas, NumPy, Git, SQL
+
+Education:
+B.Tech in Computer Science Engineering, 2026
+
+Projects:
+- Resume Ranking System: Used TF-IDF and cosine similarity to rank resumes.
+- Spam Classifier: Built with scikit-learn and NLP preprocessing techniques.
+- Movie Recommendation System using Python and Pandas.
+
+Certifications:
+- Python for Data Science (Coursera)

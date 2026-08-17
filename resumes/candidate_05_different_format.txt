@@ -1,0 +1,25 @@
+=== SNEHA IYER ===
+
+--- CONTACT ---
+sneha.iyer@example.com
+
+--- WHAT I BRING ---
+* 1.5 years building ML-powered products
+* Comfortable across the full stack: Python, APIs, cloud
+
+--- TECH TOOLKIT ---
+Python | TensorFlow | Keras | scikit-learn | REST API | PostgreSQL
+Docker | AWS | Git | Pandas
+
+--- WHERE I VE WORKED ---
+ML Engineer, NextGen AI (1.5 years)
+   -> Trained and evaluated deep learning models with TensorFlow/Keras
+   -> Exposed models via REST APIs backed by PostgreSQL
+   -> Deployed services using Docker on AWS
+
+--- SCHOOL ---
+B.Tech, Computer Science, 2024
+
+--- THINGS I BUILT ---
+* Image classifier using TensorFlow (project)
+* Chatbot using NLP techniques and Flask

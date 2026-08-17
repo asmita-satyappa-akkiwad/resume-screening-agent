@@ -1,0 +1,29 @@
+Aditi Sharma
+Email: aditi.sharma@example.com | Phone: 98765xxxxx
+
+Summary:
+Final year Computer Science student with 2 years of internship experience
+building machine learning and NLP applications in Python.
+
+Skills:
+Python, SQL, Machine Learning, NLP, scikit-learn, PyTorch, Flask, REST API,
+Git, Docker, AWS, Pandas, NumPy
+
+Experience:
+ML Intern - DataWorks Labs (2 years)
+- Built and deployed NLP models for text classification using PyTorch
+- Developed REST APIs with Flask to serve model predictions
+- Used Git for version control and Docker for containerization
+
+Education:
+B.Tech in Computer Science Engineering, 2026
+
+Projects:
+- Resume Screening Agent: Built an NLP pipeline using sentence embeddings
+  and cosine similarity to match resumes against job descriptions.
+- Sentiment Analysis Tool: Used scikit-learn and NLP techniques to classify
+  tweets, deployed as a Flask REST API on AWS.
+
+Certifications:
+- AWS Certified Cloud Practitioner
+- Machine Learning Specialization (Coursera)
